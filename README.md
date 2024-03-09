@@ -5,4 +5,4 @@
 - Pedro Henrique Anjos de Barros
 - Thiago Henrique Souza e Silva
 - Julia Maria Santos Silva
-- Marcos Gomes
+- Marcos Gomes da Cruz Junior
