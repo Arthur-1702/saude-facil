@@ -58,10 +58,14 @@ A Funcionalidade 7, denominada "Detalhamento de profissional", oferece ao usuár
 
 Funcionalidade 8: Cadastro de usuário
 
+Através dessa funcionalidade será realizado o cadastro do usuário que deverá constar: Nome completo, CPF, Data de Nascimento, CEP, Endereço e Complemento.
+
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/a7f58345-ad5a-4ba0-b5a8-0b0d6c644004)
 
 
 Funcionalidade 9: Cadastro de profissional
+
+Através dessa funcionalidade será realizado o cadastro do profissional que deverá constar: Nome completo, CPF, Data de Nascimento, Inscrição Profissional, Endereço Profissional e Complemento.
 
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/97c0a2a2-6346-471a-814b-30ebb86038d5)
 
