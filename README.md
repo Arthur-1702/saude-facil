@@ -16,6 +16,8 @@
 
 Funcionalidade 1: Home
 
+É a página que estão contidas as demais funcionalidades do site Saúde Fácil, sendo assim um Home. Nela os usuários irão navegar e encontrar botões intuitivos, devido a interface prática voltada ao público idoso contando com simbolos associativos com a sua função. Então essa é uma funcionalidade essencial para nossa aplicação, visto que ela apresenta o que o usuário poderá usufruir na plataforma.
+
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/864a08b5-ff30-4323-88b6-bcb2ff83cf1c)
 
 
@@ -29,12 +31,14 @@ Ao clicar na página de histórico, o cliente também terá acesso ao profission
 
 Funcionalidade 3: Histórico 
 
+A funcionalidade de listar histórico permite que os usuários acessem suas consultas que foram agendadas através da plataforma, dessa forma podendo acessá-las quando necessário. No histórico irá conter a data da consulta e o profissional que atendeu. Sendo bastante importante para o usuário ter o controle e visualizar de forma prática quais médicos e quando foi atendido, pois quando houver uma necessidade de marcar com o mesmo médico novamente, será mais fácil encontrar utilizando esta funcionalidade.
+
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/38f1ae7c-8694-4a36-89ba-be83d8f5f750)
 
 
 Funcionalidade 4: Laboratórios Parceiros
 
-Através dessa funcionalidade visa a facilitar ao usuário poder escolher o laboratório parceiro da Saúde Fácil.
+Através dessa funcionalidade visa a facilitar ao usuário poder escolher o laboratório parceiro da Saúde Fácil. 
 
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/9dbaf3cd-b38c-451f-8708-ad916d8bc21b)
 
@@ -47,6 +51,8 @@ Através dessa funcionalidade constará o endereço, bairro, telefone, horário 
 
 
 Funcionalidade 6: Profissionais
+
+Essa funcionalidade consiste na listagem dos profissionais cadastrados em nossa aplicação, então o usuário poderá navegar por ela e encontrar o profissional na especialidade de sua preferência, podendo ser também com base na proximidade da residência. Sendo assim, através dessa funcionalidade os usuários irão navegar e de forma intuitiva marcar a consulta que precisam no momento. 
 
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/c0c6c335-97e5-4211-94be-080ddc6fa3c4)
 
