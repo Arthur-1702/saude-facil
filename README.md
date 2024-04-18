@@ -21,22 +21,18 @@ Funcionalidade 1:
 
 Funcionalidade 2:
 
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/d7ff4b70-7f2c-47a6-8583-cff9da4cb51e)
+![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/41c8d00a-766e-4998-a6ee-b62b1415d6f7)
 
 
 Funcionalidade 3:
 
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/3ae10443-18b4-4a9a-8a8b-920d7f71391c)
 
 
 Funcionalidade 4:
 
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/1ced54ad-deb1-4b30-812a-694ea707b5b0)
 
 
 Funcionalidade 5:
-
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/9f2758a2-c9df-48ea-8911-14fbe0bc0ebd)
 
 
 Funcionalidade 6:
