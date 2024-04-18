@@ -45,7 +45,9 @@ Funcionalidade 6: Profissionais
 
 Funcionalidade 7: Detalhamento de profissional
 
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/9f7ea95c-ae26-4e28-b428-350169f09c1b) A Funcionalidade 7, denominada "Detalhamento de profissional", oferece ao usuário acesso a informações detalhadas sobre o profissional de saúde com o qual deseja agendar uma consulta. Por meio desta página, é possível visualizar o perfil completo do profissional, incluindo sua especialidade! Além disso, são apresentados detalhes relevantes, como endereço do consultório e telefone para contato, facilitando a tomada de decisão informada pelo usuário com base em suas necessidades específicas. A Funcionalidade 7 visa fornecer uma experiência completa e transparente para o usuário ao selecionar um profissional de saúde.
+A Funcionalidade 7, denominada "Detalhamento de profissional", oferece ao usuário acesso a informações detalhadas sobre o profissional de saúde com o qual deseja agendar uma consulta. Por meio desta página, é possível visualizar o perfil completo do profissional, incluindo sua especialidade! Além disso, são apresentados detalhes relevantes, como endereço do consultório e telefone para contato, facilitando a tomada de decisão informada pelo usuário com base em suas necessidades específicas. A Funcionalidade 7 visa fornecer uma experiência completa e transparente para o usuário ao selecionar um profissional de saúde.
+
+![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/9f7ea95c-ae26-4e28-b428-350169f09c1b) 
 
 Funcionalidade 8: Cadastro de usuário
 
