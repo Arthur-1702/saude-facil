@@ -78,13 +78,6 @@ Através dessa funcionalidade será realizado o cadastro do profissional que dev
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/97c0a2a2-6346-471a-814b-30ebb86038d5)
 
 
-Funcionalidade 10: Suporte
-
-Essa funcionalidade irá ajudar o usuário em caso de esquecimento de senha a disponibilizar uma "senha nova" através do e-mail cadastrado e clicando em redefinir senha.
-
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/a352c6b3-4a01-4e63-b254-67bf0354b5a5)
-
-
 Funcionalidade 11: Carregamento
 
 A Funcionalidade 11, denominada "Carregamento" é uma tela transitória que aparece enquanto o sistema processa uma ação ou carrega informações. Esta página é projetada para manter o usuário informado sobre o progresso da operação em andamento, garantindo uma experiência agradável e evitando a percepção de que o sistema está travado.
@@ -92,9 +85,6 @@ A Funcionalidade 11, denominada "Carregamento" é uma tela transitória que apar
 O elemento que compõem a função de Carregamento pode incluir o Indicador Visual de Progresso: Uma animação ou barra de progresso que indica visualmente que a operação está em andamento. Este elemento fornece feedback imediato ao usuário sobre o status do carregamento.
 
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/0e43d09c-ef57-4c2f-a7f3-138313e44794)
-
-
-Funcionalidade 12: Erro
 
 
 
