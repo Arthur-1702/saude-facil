@@ -6,6 +6,7 @@
 - Thiago Henrique Souza e Silva
 - Julia Maria Santos Silva
 - Marcos Gomes da Cruz Junior
+- Jhonata Guilherme de Freitas Silva
 
 # API
 
