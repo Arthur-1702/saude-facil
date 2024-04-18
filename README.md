@@ -72,6 +72,8 @@ Através dessa funcionalidade será realizado o cadastro do profissional que dev
 
 Funcionalidade 10: Suporte
 
+Essa funcionalidade irá ajudar o usuário em caso de esquecimento de senha a disponibilizar uma "senha nova" através do e-mail cadastrado e clicando em redefinir senha.
+
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/a352c6b3-4a01-4e63-b254-67bf0354b5a5)
 
 
