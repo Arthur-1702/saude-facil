@@ -20,7 +20,7 @@ Funcionalidade 1: Home
 
 É a página que estão contidas as demais funcionalidades do site Saúde Fácil, sendo assim um Home. Nela os usuários irão navegar e encontrar botões intuitivos, devido a interface prática voltada ao público idoso contando com simbolos associativos com a sua função. Então essa é uma funcionalidade essencial para nossa aplicação, visto que ela apresenta o que o usuário poderá usufruir na plataforma.
 
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/864a08b5-ff30-4323-88b6-bcb2ff83cf1c)
+![image](https://github.com/Arthur-1702/saude-facil/assets/107482250/61277dd6-fc27-4055-876f-2f15d8798945)
 
 
 Funcionalidade 2: Agenda
