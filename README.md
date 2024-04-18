@@ -70,6 +70,10 @@ Funcionalidade 10: Suporte
 
 Funcionalidade 11: Carregamento
 
+A Funcionalidade 11, denominada "Carregamento" é uma tela transitória que aparece enquanto o sistema processa uma ação ou carrega informações. Esta página é projetada para manter o usuário informado sobre o progresso da operação em andamento, garantindo uma experiência agradável e evitando a percepção de que o sistema está travado.
+
+O elemento que compõem a função de Carregamento pode incluir o Indicador Visual de Progresso: Uma animação ou barra de progresso que indica visualmente que a operação está em andamento. Este elemento fornece feedback imediato ao usuário sobre o status do carregamento.
+
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/0e43d09c-ef57-4c2f-a7f3-138313e44794)
 
 
