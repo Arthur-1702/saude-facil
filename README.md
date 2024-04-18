@@ -21,11 +21,12 @@ Funcionalidade 1:
 
 Funcionalidade 2:
 
-![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/41c8d00a-766e-4998-a6ee-b62b1415d6f7)
+![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/73a7b9cb-71c2-42a1-9e53-4369f27bf97c)
 
 
 Funcionalidade 3:
 
+![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/38f1ae7c-8694-4a36-89ba-be83d8f5f750)
 
 
 Funcionalidade 4:
