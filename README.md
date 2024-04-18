@@ -31,10 +31,14 @@ Funcionalidade 3: Histórico
 
 Funcionalidade 4: Laboratórios Parceiros
 
+Através dessa funcionalidade visa a facilitar ao usuário poder escolher o laboratório parceiro da Saúde Fácil.
+
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/9dbaf3cd-b38c-451f-8708-ad916d8bc21b)
 
 
 Funcionalidade 5: Consulta detalhada Laboratório
+
+Através dessa funcionalidade constará o endereço, bairro, telefone, horário de funcionamento e de como chegar ao local do laboratório selecionado.
 
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/fde0eb77-ad24-4723-94da-363ad1309d47)
 
