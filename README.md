@@ -21,6 +21,9 @@ Funcionalidade 1: Home
 
 Funcionalidade 2: Agenda
 
+Nesta página o usuário poderá ter acesso aos futuros e ao histórico de atendimento. Em agendamentos futuros, o usuário terá acesso ao profissional  e a data do agendamento. 
+Ao clicar na página de histórico, o cliente também terá acesso ao profissional e a data da consulta/serviço.
+
 ![image](https://github.com/Arthur-1702/saude-facil/assets/162645767/73a7b9cb-71c2-42a1-9e53-4369f27bf97c)
 
 
