@@ -88,6 +88,4 @@ O elemento que compõem a função de Carregamento pode incluir o Indicador Visu
 
 
 
-
-
-Pedro
+Arthur
