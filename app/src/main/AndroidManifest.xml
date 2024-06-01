@@ -31,24 +31,16 @@
             android:name=".ui.cadastro.CadastroActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.HomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.agenda.HistoricoActivity"
             android:exported="false" />
         <activity
             android:name=".ui.agenda.AgendaActivity"
-            android:exported="false"
-            android:theme="@style/Theme.SaudeFacil" />
-        <activity
-            android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.home.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
