@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332576333281",
+    "project_id": "teste-sf2",
+    "storage_bucket": "teste-sf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332576333281:android:33b66c292c822de68846a0",
+        "android_client_info": {
+          "package_name": "com.example.saudefacil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOt8q5ouCm4pqLlrhdzm3odW5vAqorQic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
