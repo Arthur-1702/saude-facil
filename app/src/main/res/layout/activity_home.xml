@@ -101,7 +101,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="88dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="38dp"
         android:background="@color/cinza_escuro"
         android:gravity="center_vertical"
         android:orientation="horizontal"
