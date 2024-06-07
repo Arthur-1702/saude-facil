@@ -1,4 +1,3 @@
 package com.example.saudefacil.model
 
-class ProfissionalItem {
-}
+data class ProfissionalItem(val nome: String, val cidade: String, val especialidade: String)
