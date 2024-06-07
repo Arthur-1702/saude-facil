@@ -5,11 +5,18 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="message_field_required">O campo %1$s é obrigatório.</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="cep">CEP</string>
+    <string name="endereco">Endereço</string>
+    <string name="complemento">Complemento</string>
     <string name="user_icon_description">Ícone de usuário</string>
     <string name="logo_description">Logo 4tech</string>
-
     <string name="prompt_select_city">Selecione a cidade</string>
     <string name="prompt_select_specialty">Selecione a especialidade</string>
+  
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
