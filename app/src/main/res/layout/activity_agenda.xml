@@ -31,7 +31,7 @@
             app:srcCompat="@drawable/agenda" />
 
         <Button
-            android:id="@+id/Agenda"
+            android:id="@+id/btnAgenda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
@@ -39,7 +39,7 @@
             android:text="Historico"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/Agenda"
+            app:layout_constraintStart_toEndOf="@+id/btnAgenda"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +50,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Agenda">
+            app:layout_constraintTop_toBottomOf="@id/btnAgenda">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -188,7 +188,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/Agenda"
+            android:id="@+id/btnAgenda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

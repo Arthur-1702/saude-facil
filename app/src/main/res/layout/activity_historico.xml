@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/cinza">
 
+
     <View
         android:layout_width="match_parent"
         android:layout_height="75dp"
@@ -16,7 +17,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.agenda.HistoricoActivity">
+        tools:context=".ui.historico.HistoricoActivity">
 
 
         <ImageView
@@ -31,7 +32,7 @@
             app:srcCompat="@drawable/agenda" />
 
         <Button
-            android:id="@+id/Agenda"
+            android:id="@+id/btnAgenda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
@@ -39,12 +40,13 @@
             android:text="Agenda"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/Agenda"
+            app:layout_constraintStart_toEndOf="@+id/btnAgenda"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateIds,NotSibling" />
 
         <TextView
-            android:id="@+id/Agenda"
+            android:id="@+id/txtHistorico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -66,10 +68,18 @@
             app:srcCompat="@drawable/logo4tech" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHistorico"
             android:layout_width="409dp"
             android:layout_height="481dp"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="249dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHistorico" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
