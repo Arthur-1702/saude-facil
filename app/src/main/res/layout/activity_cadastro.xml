@@ -1,10 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.cadastro.CadastroActivity">
+    android:background="@color/cinza">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/verde"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo4tech"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cadastro de Usuario"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-200dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvLogin"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="-85dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circulo_drawable"
+        android:gravity="center"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextNome"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="-80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sem_borda"
+        android:hint="E-mail"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="-80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sem_borda"
+        android:hint="Senha"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextCEP"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextSenha"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="-80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sem_borda"
+        android:hint="CEP"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextENDEREÇO"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextCEP"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="-85dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sem_borda"
+        android:hint="Endereço"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextComplemento"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextENDEREÇO"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circulo_drawable"
+        android:hint="Complemento"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextComplemento"
+        android:layout_marginTop="2dp"
+        android:text="Enviar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/verde"/>
+
+</RelativeLayout>

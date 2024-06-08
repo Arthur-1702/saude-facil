@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- Cor de fundo, você pode mudar ou remover -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000"/> <!-- Largura e cor da borda -->
+    <padding
+        android:left="4dp"
+        android:top="4dp"
+        android:right="4dp"
+        android:bottom="4dp"/> <!-- Padding dentro do TextView -->
+    <corners android:radius="6dp"/> <!-- Cantos arredondados -->
+</shape>

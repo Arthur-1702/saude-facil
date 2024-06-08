@@ -1,21 +1,31 @@
 package com.example.saudefacil.ui.profissional
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.saudefacil.R
+import com.example.saudefacil.databinding.ActivityProfissionalDetalheBinding
+import android.widget.TextView
 
 class ProfissionalDetalheActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityProfissionalDetalheBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_profissional_detalhe)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding = ActivityProfissionalDetalheBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // Retrieve the data from the intent
+        val professionalName = intent.getStringExtra("professional_name")
+        val professionalCity = intent.getStringExtra("professional_city")
+        val professionalSpecialty = intent.getStringExtra("professional_specialty")
+        val professionalAddress = intent.getStringExtra("professional_address")
+        val professionalPhone = intent.getStringExtra("professional_phone")
+
+        // Encontre os TextViews no layout
+        binding.nomeProf.text = professionalName ?: "N/A"
+        binding.cidade.text = professionalCity ?: "N/A"
+        binding.especialidade.text = professionalSpecialty ?: "N/A"
+        binding.endereco.text = professionalAddress ?: "N/A"
+        binding.telefone.text = professionalPhone ?: "N/A"
     }
 }
