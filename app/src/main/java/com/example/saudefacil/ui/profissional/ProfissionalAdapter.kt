@@ -17,6 +17,10 @@ class ProfissionalAdapter(
         return ProfissionalViewHolder(view)
     }
 
+    fun getProfissionais(): List<ProfissionalItem> {
+        return profissionais
+    }
+
     override fun onBindViewHolder(holder: ProfissionalViewHolder, position: Int) {
         val profissional = profissionais[position]
         holder.bind(profissional)
@@ -31,10 +35,14 @@ class ProfissionalAdapter(
     }
 
     class ProfissionalViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val nameTextView: TextView = itemView.findViewById(com.example.saudefacil.R.id.nomeProfissional)
+        private val nameTextView: TextView = itemView.findViewById(com.example.saudefacil.R.id.nome_prof)
 
-        fun bind(professional: ProfissionalItem) {
-            nameTextView.text = professional.nome
+
+        fun bind(profissional: ProfissionalItem) {
+            nameTextView.text = profissional.nome
+
         }
     }
+
+
 }

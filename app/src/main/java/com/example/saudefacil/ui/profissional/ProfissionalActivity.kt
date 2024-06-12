@@ -2,6 +2,7 @@ package com.example.saudefacil.ui.profissional
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -9,18 +10,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.saudefacil.model.ProfissionalItem
 import com.example.saudefacil.databinding.ActivityProfissionalBinding
-
+import com.google.firebase.firestore.FirebaseFirestore
 
 class ProfissionalActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProfissionalBinding
     private lateinit var adapter: ProfissionalAdapter
-
-    private val profissionais = listOf(
-        ProfissionalItem("Dr. João", "São Paulo", "Cardiologia"),
-        ProfissionalItem("Dra. Maria", "Rio de Janeiro", "Dermatologia"),
-        ProfissionalItem("Dr. Pedro", "São Paulo", "Pediatria")
-    )
+    private val db = FirebaseFirestore.getInstance()
 
     private val cities = listOf("Todas", "São Paulo", "Rio de Janeiro")
     private val specialties = listOf("Todas", "Cardiologia", "Dermatologia", "Pediatria")
@@ -32,17 +28,18 @@ class ProfissionalActivity : AppCompatActivity() {
 
         setupRecyclerView()
         setupSpinners()
+        fetchProfissionais()
     }
 
     private fun setupRecyclerView() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = ProfissionalAdapter(profissionais) { profissional ->
+        adapter = ProfissionalAdapter(emptyList()) { profissional ->
             val intent = Intent(this, ProfissionalDetalheActivity::class.java).apply {
                 putExtra("professional_name", profissional.nome)
                 putExtra("professional_city", profissional.cidade)
                 putExtra("professional_specialty", profissional.especialidade)
-                putExtra("professional_address", "Exemplo de Endereço")
-                putExtra("professional_phone", "1234-5678")
+                putExtra("professional_address", profissional.endereco)
+                putExtra("professional_phone", profissional.telefone)
             }
             startActivity(intent)
         }
@@ -75,14 +72,35 @@ class ProfissionalActivity : AppCompatActivity() {
         }
     }
 
+    private fun fetchProfissionais() {
+        db.collection("profissionais")
+            .get()
+            .addOnSuccessListener { result ->
+                val profissionais = result.map { document ->
+                    document.toObject(ProfissionalItem::class.java)
+                }
+                adapter.updateList(profissionais)
+                filterProfissionais()
+            }
+            .addOnFailureListener { exception ->
+                Log.w(TAG, "Error getting documents.", exception)
+            }
+    }
+
     private fun filterProfissionais() {
         val selectedCity = binding.spinner1.selectedItem.toString()
         val selectedSpecialty = binding.spinner2.selectedItem.toString()
 
-        val filteredProfissionais = profissionais.filter {
+        fetchProfissionais()
+
+        val filteredProfissionais = adapter.getProfissionais().filter {
             (selectedCity == "Todas" || it.cidade == selectedCity) &&
                     (selectedSpecialty == "Todas" || it.especialidade == selectedSpecialty)
         }
         adapter.updateList(filteredProfissionais)
+    }
+
+    companion object {
+        private const val TAG = "ProfissionalActivity"
     }
 }

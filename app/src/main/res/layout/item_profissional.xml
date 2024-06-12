@@ -6,7 +6,7 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/nomeProfissional"
+        android:id="@+id/nome_prof"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
