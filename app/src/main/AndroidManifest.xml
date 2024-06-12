@@ -31,7 +31,7 @@
             android:name=".ui.cadastro.CadastroActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.agenda.HistoricoActivity"
+            android:name=".ui.historico.HistoricoActivity"
             android:exported="false" />
         <activity
             android:name=".ui.agenda.AgendaActivity"

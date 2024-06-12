@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cinza">
@@ -11,9 +13,6 @@
         android:layout_alignParentTop="true"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -71,13 +70,13 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btEntrar"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="wrap_content"
-                android:text="Login"
                 android:background="@color/cinza_escuro"
-                android:textColor="@android:color/white"
                 android:padding="12dp"
-                android:textSize="16dp" />
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
