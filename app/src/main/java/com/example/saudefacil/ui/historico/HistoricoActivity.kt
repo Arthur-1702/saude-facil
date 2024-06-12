@@ -1,19 +1,23 @@
 package com.example.saudefacil.ui.historico
-
-
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.saudefacil.R
+import com.example.saudefacil.R.id.professional_list
+import com.example.saudefacil.R.layout
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.example.saudefacil.R.layout.activity_profissional)
+        setContentView(layout.activity_profissional)
 
-        val professionalList = findViewById<LinearLayout>(R.id.professional_list)
+        val professionalList = findViewById<LinearLayout>(professional_list)
 
         // Dados fictícios para preencher a lista
         val professionals = listOf(
@@ -25,10 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         // Preenchendo a lista dinamicamente
         professionals.forEach { (name, date) ->
-            val itemView = layoutInflater.inflate(R.layout.professional_item, professionalList, false)
+            val itemView = layoutInflater.inflate(layout.professionalItem, professionalList, false)
 
-            val nameTextView = itemView.findViewById<TextView>(R.id.professional_name)
-            val dateTextView = itemView.findViewById<TextView>(R.id.professional_date)
+            val nameTextView = itemView.findViewById<TextView>(com.example.saudefacil.R.id.professional_name)
+            val dateTextView = itemView.findViewById<TextView>(com.example.saudefacil.R.id.professional_date)
 
             nameTextView.text = name
             dateTextView.text = date
