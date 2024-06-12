@@ -1,4 +1,7 @@
 package com.example.saudefacil.model
 
-class AgendaItem {
-}
+data class AgendaItem(
+    val profissional: String = "",
+    val data: String = "",
+    val usuario: String = ""
+)

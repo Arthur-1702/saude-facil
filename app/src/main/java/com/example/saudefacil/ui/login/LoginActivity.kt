@@ -1,5 +1,6 @@
 package com.example.saudefacil.ui.login
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -10,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.saudefacil.R
+import com.example.saudefacil.ui.cadastro.CadastroActivity
+import com.example.saudefacil.ui.home.HomeActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
@@ -64,7 +67,10 @@ class LoginActivity : AppCompatActivity() {
                     // Login bem-sucedido
                     val user = FirebaseAuth.getInstance().currentUser
                     Snackbar.make(findViewById(R.id.main), mensagens[1], Snackbar.LENGTH_SHORT).show()
-                    // Faça algo com o usuário autenticado
+
+                    val intent = Intent(this, HomeActivity::class.java)
+                    intent.putExtra("logado", "Usuário Logado com Sucesso")
+                    startActivity(intent)
                 } else {
                     // Falha no login
                     Snackbar.make(findViewById(R.id.main), "Falha na autenticação.", Snackbar.LENGTH_SHORT).show()
