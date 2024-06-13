@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/cinza">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:background="@color/verde"
-        android:layout_alignParentTop="true"/>
-
     <!-- Header verde com logo -->
     <RelativeLayout
         android:id="@+id/header"
@@ -118,4 +112,4 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/agenda_section"
         android:orientation="vertical"
-        android:layout_marginTop="16dp
+        android:layout_marginTop="16dp">
