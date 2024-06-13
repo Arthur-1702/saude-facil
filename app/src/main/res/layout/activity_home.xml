@@ -5,6 +5,22 @@
     android:background="@color/cinza"
     android:id="@+id/homeMain">
 
+    <!-- Header verde com logo -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/verde">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo4tech" />
+    </RelativeLayout>
+
+
     <LinearLayout
         android:id="@+id/cadastroButton"
         android:layout_width="219dp"
@@ -50,12 +66,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:background="@color/verde"
-        android:layout_alignParentTop="true"/>
 
     <LinearLayout
         android:id="@+id/btnLaboratorios"

@@ -14,6 +14,7 @@ class LaboratorioDetalheActivity : AppCompatActivity() {
     private lateinit var firestore: FirebaseFirestore
     private var labEndereco: String? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_laboratorio_detalhe)
@@ -65,5 +66,22 @@ class LaboratorioDetalheActivity : AppCompatActivity() {
                 startActivity(mapIntent)
             }
         }
+        binding = ActivityLaboratorioDetalheBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        // Retrieve the data from the intent
+        val laboratorioName = intent.getStringExtra("laboratorio_name")
+        val laboratorioCep = intent.getStringExtra("laboratorio_cep")
+        val laboratorioAddress = intent.getStringExtra("laboratorio_address")
+        val laboratorioPhone = intent.getStringExtra("laboratorio_phone")
+        val laboratorioFuncionamento = intent.getStringExtra("laboratorio_funcionamento")
+
+        // Encontre os TextViews no layout
+        binding.nomeLab.text = laboratorioName ?: "N/A"
+        binding.cep.text = laboratorioCep ?: "N/A"
+        binding.enderecoLab.text = laboratorioAddress ?: "N/A"
+        binding.telefoneLab.text = laboratorioPhone ?: "N/A"
+        binding.funcionamento.text = laboratorioFuncionamento ?: "N/A"
     }
 }
