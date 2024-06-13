@@ -38,5 +38,9 @@ class LaboratorioDetalheActivity : AppCompatActivity() {
         binding.enderecoLab.text = laboratorioAddress ?: "N/A"
         binding.telefoneLab.text = laboratorioPhone ?: "N/A"
         binding.funcionamento.text = laboratorioFuncionamento ?: "N/A"
+
+        binding.voltar.setOnClickListener {
+            finish()
+        }
     }
 }
