@@ -1,13 +1,13 @@
 package com.example.saudefacil.ui.cadastro
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.saudefacil.R
 import com.example.saudefacil.databinding.ActivityCadastroBinding
+import com.example.saudefacil.ui.home.HomeActivity
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
 
 class CadastroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCadastroBinding
@@ -18,12 +18,11 @@ class CadastroActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-
             val name = binding.editTextNome.text.toString()
             val email = binding.editTextEmail.text.toString()
             val senha = binding.editTextSenha.text.toString()
             val cep = binding.editTextCEP.text.toString()
-            val endereco = binding.editTextENDEREO.text.toString()
+            val endereco = binding.editTextEndereco.text.toString()
             val complemento = binding.editTextComplemento.text.toString()
 
             var isToAdd = true
@@ -49,7 +48,7 @@ class CadastroActivity : AppCompatActivity() {
                 isToAdd = false
             }
             if (endereco.isEmpty()) {
-                binding.editTextENDEREO.error =
+                binding.editTextEndereco.error =
                     getString(R.string.message_field_required, getString(R.string.endereco))
                 isToAdd = false
             }
@@ -60,7 +59,26 @@ class CadastroActivity : AppCompatActivity() {
             }
 
             if (isToAdd) {
+                CadastrarUsuario()
             }
         }
+    }
+
+    private fun CadastrarUsuario() {
+        val email = binding.editTextEmail.text.toString()
+        val senha = binding.editTextSenha.text.toString()
+
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, senha)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Snackbar.make(findViewById(R.id.main), R.string.cadastro_sucesso, Snackbar.LENGTH_SHORT).show()
+
+                    val intent = Intent(this, HomeActivity::class.java)
+                    intent.putExtra("Cadastrado", "Usuário Cadastrado com Sucesso")
+                    startActivity(intent)
+                } else {
+                    Snackbar.make(findViewById(R.id.main), R.string.cadastro_erro, Snackbar.LENGTH_SHORT).show()
+                }
+            }
     }
 }
