@@ -4,29 +4,32 @@
     android:layout_height="match_parent"
     android:background="@color/cinza">
 
-    <View
+    <RelativeLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:background="@color/verde"
-        android:layout_alignParentTop="true" />
+        android:layout_height="100dp"
+        android:background="@color/verde">
 
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/logo4tech"
-        android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo4tech" />
+    </RelativeLayout>
+
 
     <TextView
-        android:id="@+id/tvLogin"
-        android:layout_marginTop="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Cadastro de Usuario"
-        android:textSize="24sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-200dp"
-        />
+    android:id="@+id/tvLogin"
+    android:layout_marginTop="100dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cadastro de Usuario"
+    android:textSize="24sp"
+    android:textColor="@color/black"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="-200dp"
+    />
 
     <EditText
         android:id="@+id/editTextNome"
