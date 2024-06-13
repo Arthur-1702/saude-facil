@@ -18,8 +18,8 @@ class ProfissionalActivity : AppCompatActivity() {
     private lateinit var adapter: ProfissionalAdapter
     private val db = FirebaseFirestore.getInstance()
 
-    private val cities = listOf("Todas", "São Paulo", "Rio de Janeiro")
-    private val specialties = listOf("Todas", "Cardiologia", "Dermatologia", "Pediatria")
+    private val cities = listOf("Todas", "São Paulo", "Rio de Janeiro", "Recife", "Olinda")
+    private val specialties = listOf("Todas", "Cardiologia", "Dermatologia", "Fisioterapeuta","Nutricionista")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
