@@ -49,10 +49,11 @@
             android:layout_marginTop="8dp" />
 
         <Button
-            android:id="@+id/historico_button"
+            android:id="@+id/agenda_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HISTORICO"
+            android:backgroundTint="@color/cinza_escuro"
+            android:text="HISTÓRICO"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true" />
     </RelativeLayout>
@@ -64,6 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/agenda_section"
         android:layout_marginTop="16dp"
-        android:orientation="vertical"/>
+        android:orientation="vertical" />
 
 </RelativeLayout>
